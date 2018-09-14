@@ -1,0 +1,28 @@
+.Modal {
+    position: fixed;
+    background-color: white;
+    width: 70%;
+    height: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    z-index: 500;
+}
+
+button {
+    position: relative;
+    top: 30px;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
